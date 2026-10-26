@@ -8,4 +8,4 @@ Genellikle doğrudan değil, `@mari-ui/components` ya da `@mari-ui/native` ile b
 pnpm add @mari-ui/components @mari-ui/core @mari-ui/tokens
 ```
 
-Ayrıntı: [mari-ui deposu](https://github.com/aykutyilmaz37/mari-ui#readme). Lisans: MIT.
+Ayrıntı: [mari-ui deposu](https://github.com/tfcs-istanbul/mari-ui#readme). Lisans: MIT.

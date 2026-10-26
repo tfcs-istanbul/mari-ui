@@ -6,12 +6,12 @@
   "author": "Aykut Yılmaz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aykutyilmaz37/mari-ui.git",
+    "url": "git+https://github.com/tfcs-istanbul/mari-ui.git",
     "directory": "packages/native"
   },
-  "homepage": "https://github.com/aykutyilmaz37/mari-ui#readme",
+  "homepage": "https://github.com/tfcs-istanbul/mari-ui#readme",
   "bugs": {
-    "url": "https://github.com/aykutyilmaz37/mari-ui/issues"
+    "url": "https://github.com/tfcs-istanbul/mari-ui/issues"
   },
   "type": "module",
   "sideEffects": false,

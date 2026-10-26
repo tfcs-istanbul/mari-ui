@@ -23,4 +23,4 @@ import { Button } from "@mari-ui/components/button";
 
 `npx @mari-ui/cli init` projenize uygun CSS girişini söyler, tema dosyalarını ve AI ajan kurallarını kurar.
 
-Kurulum, tema ve component dokümanları: [mari-ui deposu](https://github.com/aykutyilmaz37/mari-ui#readme). Lisans: MIT.
+Kurulum, tema ve component dokümanları: [mari-ui deposu](https://github.com/tfcs-istanbul/mari-ui#readme). Lisans: MIT.
