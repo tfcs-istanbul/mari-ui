@@ -1,5 +1,12 @@
 # @mari-ui/cli
 
+## 0.6.3
+
+### Patch Changes
+
+- 6b7d9a8: AI kural dosyalarındaki link kuralı netleştirildi: `href` + `onNavigate` mari-ui component'leri için; uygulama içi kendi linklerinde router'ın `Link`'i, düz `<a href>` yalnız dış adres, indirme ve tam sayfa geçişleri için. Önceki "Linkler düz `<a href>`" ifadesi ajanların iç linkleri de düz yazmasına ve her tıklamada sayfanın baştan yüklenmesine yol açıyordu.
+- @mari-ui/tokens@0.6.3
+
 ## 0.6.2
 
 ### Patch Changes
