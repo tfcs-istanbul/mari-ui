@@ -1,6 +1,6 @@
 # @mari-ui/native
 
-[mari-ui](https://github.com/aykutyilmaz37/mari-ui) tasarım sisteminin React Native component'leri. Web'deki `@mari-ui/components` ile aynı prop adları, aynı tema ve renk sözleşmesi; ölçüler ise dokunmatik ekrana göre (en az 44 pt dokunma hedefi, platform metin ölçeği).
+[mari-ui](https://github.com/tfcs-istanbul/mari-ui) tasarım sisteminin React Native component'leri. Web'deki `@mari-ui/components` ile aynı prop adları, aynı tema ve renk sözleşmesi; ölçüler ise dokunmatik ekrana göre (en az 44 pt dokunma hedefi, platform metin ölçeği).
 
 - **~45 component** — form, gezinme, veri gösterimi, katmanlar (Modal, BottomSheet, Toast), görsel galerisi.
 - **Sıfır kurulum** — `StyleSheet` + `@mari-ui/tokens`; NativeWind, babel ya da metro eklentisi gerekmez.
@@ -101,7 +101,7 @@ Select / BottomSheet / Modal açan ekranın `ScrollView`una `keyboardShouldPersi
 
 ## Bağlantılar
 
-- Component dokümanları ve örnekler: [mari-ui deposu](https://github.com/aykutyilmaz37/mari-ui#readme) (Storybook: `pnpm storybook`, "Native" grubu)
+- Component dokümanları ve örnekler: [mari-ui deposu](https://github.com/tfcs-istanbul/mari-ui#readme) (Storybook: `pnpm storybook`, "Native" grubu)
 - Web component'leri: [`@mari-ui/components`](https://www.npmjs.com/package/@mari-ui/components)
 
 Lisans: MIT.

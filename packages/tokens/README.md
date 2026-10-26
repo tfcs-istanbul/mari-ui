@@ -1,6 +1,6 @@
 # @mari-ui/tokens
 
-[mari-ui](https://github.com/aykutyilmaz37/mari-ui) tasarım sisteminin tek token kaynağı: renk, boşluk, köşe, tipografi, gölge, katman ve hareket. Web (CSS değişkenleri) ve React Native (JS `Theme` objeleri) aynı kaynaktan beslenir. Açık ve koyu temanın her rengi **WCAG AA kontrastı hesaplanarak** türetilir. React'e ya da DOM'a bağımlı değildir; sunucuda, build adımında ve native'de çalışır.
+[mari-ui](https://github.com/tfcs-istanbul/mari-ui) tasarım sisteminin tek token kaynağı: renk, boşluk, köşe, tipografi, gölge, katman ve hareket. Web (CSS değişkenleri) ve React Native (JS `Theme` objeleri) aynı kaynaktan beslenir. Açık ve koyu temanın her rengi **WCAG AA kontrastı hesaplanarak** türetilir. React'e ya da DOM'a bağımlı değildir; sunucuda, build adımında ve native'de çalışır.
 
 ```bash
 pnpm add @mari-ui/tokens

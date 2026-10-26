@@ -1,6 +1,6 @@
 # @mari-ui/cli
 
-[mari-ui](https://github.com/aykutyilmaz37/mari-ui) tasarım sistemini bir projeye kurar, projenin temasını üretir ve AI kod asistanları (Claude Code, Codex, Cursor, Gemini, GitHub Copilot) için **kütüphanenin gerçek prop sözleşmesinden** üretilmiş kural dosyalarını güncel tutar.
+[mari-ui](https://github.com/tfcs-istanbul/mari-ui) tasarım sistemini bir projeye kurar, projenin temasını üretir ve AI kod asistanları (Claude Code, Codex, Cursor, Gemini, GitHub Copilot) için **kütüphanenin gerçek prop sözleşmesinden** üretilmiş kural dosyalarını güncel tutar.
 
 ## Hızlı başlangıç
 
@@ -25,7 +25,7 @@ npx @mari-ui/cli theme     # tema dosyalarını üretir (temayı değiştirmek i
 
 Seçilmeyen platformun paketi eklenmez; kurulu yabancı mari-ui paketi uyarılır (silinmez). Native'de `theme` CSS üretmez. Ayrı web ve mobil uygulamaları olan monorepo'da her uygulamayı kendi klasöründe kurun: `init --platform web --dir apps/web`, `init --platform native --dir apps/mobile`.
 
-Karar tablosu, yazılan dosyalar ve yanlış kurulumu düzeltme: [docs/kurulum-platformlar.md](https://github.com/aykutyilmaz37/mari-ui/blob/main/docs/kurulum-platformlar.md).
+Karar tablosu, yazılan dosyalar ve yanlış kurulumu düzeltme: [docs/kurulum-platformlar.md](https://github.com/tfcs-istanbul/mari-ui/blob/main/docs/kurulum-platformlar.md).
 
 ## Komutlar
 
