@@ -1,5 +1,13 @@
 # @mari-ui/core
 
+## 0.6.2
+
+### Patch Changes
+
+- 6ced26d: Depo `tfcs-istanbul` organizasyonuna taşındı; paket bağlantıları yeni adrese güncellendi.
+- Updated dependencies [6ced26d]
+  - @mari-ui/tokens@0.6.2
+
 ## 0.6.1
 
 ### Patch Changes
