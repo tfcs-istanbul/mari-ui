@@ -51,9 +51,9 @@ export const MUST_RULES: readonly MustRule[] = [
     why: "Ekran okuyucu ve klavye kullanıcıları için asgari şart; component'ler gerisini çözüyor.",
   },
   {
-    title: "Linkler düz `<a href>`",
-    rule: "Menü/breadcrumb gibi component'lere `href` ver; SPA geçişi için `onNavigate` prop'una router'ın gezinme fonksiyonunu geçir. Router'a özel Link sarmalayıcısı yazma.",
-    why: "Component'ler router'dan bağımsız; yeni sekmede açma, dış link ve erişilebilirlik bu şekilde doğru çalışır.",
+    title: "Component linkleri `href` + `onNavigate`",
+    rule: "Menü/breadcrumb gibi mari-ui component'lerine `href` ver; SPA geçişi için `onNavigate` prop'una router'ın gezinme fonksiyonunu geçir, component'i Link'e sarma. Kendi yazdığın uygulama içi linklerde router'ın link component'ini kullan (React Router/Next `Link`); düz `<a href>` yalnız dış adres, dosya indirme ve tam sayfa yüklemesi gereken geçişler (OAuth/sosyal giriş) için.",
+    why: "Component'ler router'dan bağımsız; yeni sekmede açma, dış link ve erişilebilirlik bu şekilde doğru çalışır. Uygulama içi düz `<a href>` her tıklamada sayfayı baştan yükler.",
   },
 ];
 
