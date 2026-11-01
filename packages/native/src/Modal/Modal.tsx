@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { KeyboardAvoidingView, Modal as RNModal, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type StyleProp, type ViewStyle } from "react-native";
+import { KeyboardAvoidingView, Modal as RNModal, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type StyleProp, type ViewStyle } from "react-native";
 import type { ColorRole, Size } from "@mari-ui/core";
 import { useNativeConfig } from "../nativeConfig";
 import { nativeFontFamily } from "../theme/fontFamily";
@@ -198,7 +198,8 @@ export function Modal(props: Readonly<ModalProps>) {
 
   return (
     <RNModal transparent visible={open} animationType="fade" statusBarTranslucent onRequestClose={keyboard ? onClose : () => undefined}>
-      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : undefined} style={{ flex: 1 }}>
+      {/* Android'de de "padding": edge-to-edge pencerede `adjustResize` Modal'ı küçültmez. */}
+      <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: GUTTER }}>
           {/* Karartma kardeş katmandır; içerideki kaydırma hareketlerini yakalamaz. */}
           <Pressable accessible={false} importantForAccessibility="no" onPress={maskClosable ? onClose : undefined} style={[StyleSheet.absoluteFill, { backgroundColor: scrimColor(theme) }]} />

@@ -50,7 +50,6 @@ export interface BottomSheetProps extends SkeletonableProps {
 const HANDLE_AREA = 24;
 const OPEN_MS = 280;
 // Fonksiyonlar: modül seviyesindeki `Platform.OS` erişimi yan etkili sayılır (tree-shaking, Faz 4c).
-const keyboardBehavior = () => (Platform.OS === "ios" ? ("padding" as const) : undefined);
 const defaultInset = () => (Platform.OS === "ios" ? 28 : 16);
 const noop = () => undefined;
 
@@ -231,7 +230,7 @@ function useSheetPan(motion: Motion, snaps: number[], closable: boolean, settle:
 }
 
 /**
- * Açık klavyenin yüksekliği. iOS'ta KeyboardAvoidingView paneli klavye kadar
+ * Açık klavyenin yüksekliği. KeyboardAvoidingView paneli klavye kadar
  * yukarı iter; panel yüksekliği sınırlanmazsa (%85 durak + klavye > ekran)
  * tepesi — arama alanı — ekrandan çıkıyordu (cihazda görüldü).
  */
@@ -346,7 +345,8 @@ export function BottomSheet(props: Readonly<BottomSheetProps>) {
       <Animated.View style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: scrimColor(theme), opacity: scrimOpacity }}>
         <Pressable accessible={false} style={{ flex: 1 }} onPress={h.onMaskPress} />
       </Animated.View>
-      <KeyboardAvoidingView behavior={keyboardBehavior()} pointerEvents="box-none" style={{ flex: 1, justifyContent: "flex-end" }}>
+      {/* Android'de de "padding": edge-to-edge pencerede `adjustResize` Modal'ı küçültmez, panel klavye altında kalıyordu. Pencere küçülen kurulumlarda örtüşme 0 çıkar, çift itmez. */}
+      <KeyboardAvoidingView behavior="padding" pointerEvents="box-none" style={{ flex: 1, justifyContent: "flex-end" }}>
         <Animated.View
           accessibilityViewIsModal
           aria-modal
