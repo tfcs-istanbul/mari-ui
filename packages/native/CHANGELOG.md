@@ -1,5 +1,13 @@
 # @mari-ui/native
 
+## 0.6.4
+
+### Patch Changes
+
+- ea2b563: BottomSheet ve Modal, Android'de (edge-to-edge) klavye açılınca klavyenin altında kalmıyor; panel klavyenin üstüne itiliyor.
+- @mari-ui/core@0.6.4
+  - @mari-ui/tokens@0.6.4
+
 ## 0.6.3
 
 ### Patch Changes
